@@ -1,5 +1,7 @@
+import { Menu } from "../../components/Menu"
+
 export const Home = () => {
     return (
-        <h1 className="text-3xl font-bold underline"> Home </h1>
+        <Menu />
     )
 }
