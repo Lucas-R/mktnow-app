@@ -1,34 +1,20 @@
-import { Link } from "react-router-dom"
-
-interface LiProps {
-    children: React.ReactElement;
-}
-
-const Li = ({children}: LiProps) => <li className="text-white text-xs font-semibold uppercase hover:underline">{ children }</li>
+import { Link } from 'react-router-dom';
+import Brand from '/mktnow_logo.png';
 
 export const Menu = () => {
     return (
-        <div className="w-full h-auto py-6 bg-pink-700">
-            <div className="container h-full m-auto flex items-center justify-between">
-                <Link className="font-bold text-2xl text-white" to="/"> MKT|Now </Link>
+        <div className="mx-auto px-4 pb-5 pt-7 mb-2 flex items-center justify-between lg:max-w-7xl">
+            <Link to="/">
+                <img src={Brand} alt="Agência de Performance Digital - Mktnow" />
+            </Link>
 
-                <nav>
-                    <ul className="flex gap-4">
-                        <Li>
-                            <Link to="/relatorios">Relatórios</Link>
-                        </Li>
-                        <Li>
-                            <Link to="/tarefas">Tarefas</Link>
-                        </Li>
-                        <Li>
-                            <Link to="/empresas">Empresas</Link>
-                        </Li>
-                        <Li>
-                            <Link to="">Lucas</Link>
-                        </Li>
-                    </ul>
-                </nav>
-            </div>
+            <nav className='flex items-center gap-4 sm:gap-8'>
+                <Link className="text-sm/6 font-medium text-zinc-300 hover:text-white" to="/">Inicio</Link>
+
+                <Link className="text-sm/6 font-medium text-zinc-300 hover:text-white" to="/">Tarefas</Link>
+
+                <Link className="text-sm/6 font-medium text-zinc-300 hover:text-white" to="/">Relatórios</Link>
+            </nav>
         </div>
     )
 }

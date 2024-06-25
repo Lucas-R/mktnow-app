@@ -1,5 +1,10 @@
+import { Menu } from "../../components/Menu"
+
 export const Companies = () => {
     return (
-        <h1> Companies </h1>
+        <>
+            <Menu />
+            <h1> Companies </h1>
+        </>
     )
 }
