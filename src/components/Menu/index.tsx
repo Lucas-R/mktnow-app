@@ -21,6 +21,9 @@ export const Menu = () => {
                             <Link to="/tarefas">Tarefas</Link>
                         </Li>
                         <Li>
+                            <Link to="/empresas">Empresas</Link>
+                        </Li>
+                        <Li>
                             <Link to="">Lucas</Link>
                         </Li>
                     </ul>
