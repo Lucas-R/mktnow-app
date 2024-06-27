@@ -3,7 +3,7 @@ import Brand from '/mktnow_logo.png';
 
 export const Menu = () => {
     return (
-        <div className="mx-auto px-4 pb-5 pt-7 mb-2 flex items-center justify-between lg:max-w-7xl">
+        <div className="container ml-auto mr-auto px-4 py-7 mb-2 flex items-center justify-between">
             <Link to="/">
                 <img src={Brand} alt="Agência de Performance Digital - Mktnow" />
             </Link>
@@ -14,6 +14,8 @@ export const Menu = () => {
                 <Link className="text-sm/6 font-medium text-zinc-300 hover:text-white" to="/">Tarefas</Link>
 
                 <Link className="text-sm/6 font-medium text-zinc-300 hover:text-white" to="/">Relatórios</Link>
+
+                <Link className="text-sm/6 font-medium text-zinc-300 hover:text-white" to="/empresas">Empresas</Link>
             </nav>
         </div>
     )
