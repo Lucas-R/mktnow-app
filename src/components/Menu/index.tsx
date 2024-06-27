@@ -11,7 +11,7 @@ export const Menu = () => {
             <nav className='flex items-center gap-4 sm:gap-8'>
                 <Link className="text-sm/6 font-medium text-zinc-300 hover:text-white" to="/">Inicio</Link>
 
-                <Link className="text-sm/6 font-medium text-zinc-300 hover:text-white" to="/">Tarefas</Link>
+                <Link className="text-sm/6 font-medium text-zinc-300 hover:text-white" to="/tarefas">Tarefas</Link>
 
                 <Link className="text-sm/6 font-medium text-zinc-300 hover:text-white" to="/">Relatórios</Link>
 

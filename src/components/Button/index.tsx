@@ -22,10 +22,18 @@ const button = tv({
     }
 });
 
-type ButtonProps = ComponentProps<'button'> & VariantProps<typeof button> & {}
+type ButtonProps = ComponentProps<'button'> & VariantProps<typeof button> & {
+    fn?: () => void
+}
 
-export const Button = ({children, color, size, className, ...props}: ButtonProps) => {
+export const Button = ({children, color, size, className, fn, ...props}: ButtonProps) => {
     return(
-        <button className={button({color, size, className})} {...props}>{children}</button>
+        <button
+            onClick={fn}
+            className={button({color, size, className})} 
+            {...props}
+        >
+            {children}
+        </button>
     )
 }
