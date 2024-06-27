@@ -4,6 +4,8 @@ import {
 } from 'react-router-dom'
 import { Home } from '../pages/Home';
 import { Companies } from '../pages/Companies';
+import { Tasks } from '../pages/Tasks';
+import { Task } from '../pages/Tasks/Task';
 
 const router = createBrowserRouter([
     {
@@ -11,8 +13,12 @@ const router = createBrowserRouter([
         element: <Home />,
     },
     {
-        path: '/relatorios',
-        element: <Home />,
+        path: '/tarefas',
+        element: <Tasks />,
+    },
+    {
+        path: '/tarefa/:taskId',
+        element: <Task />,
     },
     {
         path: '/empresas',
